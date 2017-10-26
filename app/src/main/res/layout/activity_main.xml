@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guides.mysharedpreferences.MainActivity">
+
+    <TextView
+
+        android:text="Username : "
+        android:id="@+id/text1"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:layout_alignStart="@+id/text1" />
+    <EditText
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_alignBottom="@+id/text1"
+        android:layout_toEndOf="@+id/text1"
+        android:layout_marginStart="12dp"
+        android:id="@+id/editText1" />
+    <EditText
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/text2"
+        android:layout_alignStart="@+id/editText1" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginTop="39dp"
+        android:text="Save info"
+        android:layout_below="@+id/text2"
+        android:layout_alignStart="@+id/text2"
+        android:onClick="saveInfo"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginStart="14dp"
+        android:text="Display Info"
+        android:id="@+id/button2"
+        android:onClick="displayInfo"/>
+    <TextView
+        android:text="Display"
+        android:id="@+id/wow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="62dp" />
+</RelativeLayout>
